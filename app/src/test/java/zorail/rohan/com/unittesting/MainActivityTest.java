@@ -71,8 +71,8 @@ public class MainActivityTest {
 
         //Assert
         ShadowActivity shadowActivity = Shadows.shadowOf(activity);
-        Intent actualIntent = shadowActivity.getNextStartedActivity();
-        assertTrue(expectedIntent.filterEquals(actualIntent));
+        Intent realIntent = shadowActivity.getNextStartedActivity();
+        assertTrue(expectedIntent.filterEquals(realIntent));
     }
 
 }
