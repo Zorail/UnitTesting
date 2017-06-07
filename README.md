@@ -6,3 +6,5 @@ Tests of Mockito are made in accordance with the arguments being passed to the f
 Robolectric tests work with our activity reference.
 
 For rololectric to work ,go to Run->Edit Configurations->Android JUnit and set working directory to $MODULE_DIR$ if it's not working.
+
+Espresso tests run on a real device ,so do connect with adb and turn the animations off in developer options.
