@@ -1,4 +1,6 @@
 # UnitTesting
-UnitTesting with Mockito
+UnitTesting with Mockito,Robolectric
 
-Tests are made in accordance with the arguments being passed to the function :) 
+Tests of Mockito are made in accordance with the arguments being passed to the function .
+
+Robolectric tests work with our activity reference
