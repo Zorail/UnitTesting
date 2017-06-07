@@ -2,6 +2,7 @@ package zorail.rohan.com.unittesting;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity implements MainActivityView {
     LinearLayout linearLayout;
     EditText editText;
@@ -23,11 +26,11 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
     MainActivityPresenter presenter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         presenter = new MainActivityPresenter(this);
+
         textView = (TextView) findViewById(R.id.textView);
         editText = (EditText) findViewById(R.id.editText);
         launchActivityButton = (Button) findViewById(R.id.launchActivityButton);

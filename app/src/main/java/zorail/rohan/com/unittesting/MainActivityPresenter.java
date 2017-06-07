@@ -2,6 +2,8 @@ package zorail.rohan.com.unittesting;
 
 import android.graphics.Color;
 
+import javax.inject.Inject;
+
 /**
  * Created by zorail on 06-Jun-17.
  */
